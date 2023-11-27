@@ -1,0 +1,31 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main_page/css/main_page.css' %}">
+    <title>Main</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="{% url 'show_contact' %}" class="headet_links">Наші контакти</a>
+            <a href="{% url 'show_product' %}" class="headet_links">Продукти</a>
+            <a href="#" class="headet_links">Відгук</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Наш магазин представляє продаж радіоактивних матеріалів</h1>
+        <p>Ми можемо продавати вам будь-які радіоактивні матеріали, які ви тільки забажаєте. Уран 235, Уран 238, Каліфорній, Плутоній і так далі. </p>
+    </main>
+
+    <footer>
+        <div>
+            <a href="{% url 'show_contact' %}" class="headet_links">Наші контакти</a>
+            <a href="{% url 'show_product' %}" class="headet_links">Продукти</a>
+            <a href="#" class="headet_links">Відгук</a>
+        </div>
+    </footer>
+</body>
+</html>
