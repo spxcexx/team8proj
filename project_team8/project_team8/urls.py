@@ -31,4 +31,6 @@ urlpatterns = [
     path('product/', show_product_page , name="show_product"),
     path('registration/', show_registration , name="show_registration"),
     path('shopping_cart/', show_shopping_cart_page , name="show_shopping_cart"),
+    path('login/', show_login, name="show_login"),
+    path("logout/", user_logout, name="logout")
 ]

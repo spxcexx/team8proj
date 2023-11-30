@@ -1,3 +1,4 @@
+{% extends 'app_settings/app_settings.html' %}
 {% load static %}
 <html lang="en">
 <head>
@@ -7,6 +8,7 @@
     <title>ShoppingCart</title>
 </head>
 <body>
+    {% block content %}
     <video preload="auto" loop autoplay src="https://upload.wikimedia.org/wikipedia/ru/6/6b/NyanCat.gif"></video>
     <header>
         <h1>Корзина</h1>
@@ -14,5 +16,6 @@
     <main>
 
     </main>
+    {% endblock %}
 </body>
 </html>

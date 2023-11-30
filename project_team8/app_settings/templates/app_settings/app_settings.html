@@ -6,5 +6,33 @@
 </head>
 <body>
 
+    <header>
+        <div>
+            <a href="{% url 'show_main' %}">Головна</a>
+            <a href="{% url 'show_contact' %}" class="headet_links">Наші контакти</a>
+            <a href="{% url 'show_product' %}" class="headet_links">Продукти</a>
+            <a href="{% url 'show_app_settings' %}" class="headet_links">Налаштування</a>
+            <a href="{% url 'show_shopping_cart' %}" class="headet_links">Кошик</a>
+            <a href="{% url 'show_registration' %}" class="headet_links">Реєстрація</a>
+            <a href="{% url 'show_login' %}" class="headet_links">Вхід</a>
+            <a href="#" class="headet_links">Відгуки</a>
+        </div>
+
+
+    </header>
+    <footer>
+        <div>
+            <a href="{% url 'show_main' %}">Головна</a>
+            <a href="{% url 'show_contact' %}" class="headet_links">Наші контакти</a>
+            <a href="{% url 'show_product' %}" class="headet_links">Продукти</a>
+            <a href="{% url 'show_app_settings' %}" class="headet_links">Налаштування</a>
+            <a href="{% url 'show_shopping_cart' %}" class="headet_links">Кошик</a>
+            <a href="{% url 'show_registration' %}" class="headet_links">Реєстрація</a>
+            <a href="{% url 'show_login' %}" class="headet_links">Вхід</a>
+            <a href="#" class="headet_links">Відгуки</a>
+        </div>
+    </footer>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>

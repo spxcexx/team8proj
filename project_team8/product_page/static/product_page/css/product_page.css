@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.image{
+    display: flex;
+    width: 200px !important;
+    
+}

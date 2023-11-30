@@ -1,3 +1,4 @@
+{% extends 'app_settings/app_settings.html' %}
 {% load static %}
 <html lang="en">
 <head>
@@ -7,6 +8,7 @@
     <title>Contact</title>
 </head>
 <body>
+    {% block content %}
     <main>
         <div>
             <a href="">Instagram</a>
@@ -17,5 +19,6 @@
         <p>+38054923752035</p>
         <p>Наш магазин знаходиться за такими координатами: 51.38942110827667, 30.09883691389289</p>
     </main>
+    {% endblock %}
 </body>
 </html>

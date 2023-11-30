@@ -1,0 +1,26 @@
+{% extends 'app_settings/app_settings.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    {% block content %}
+    <div class="login_and_reg">
+        <h1>Вхід</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <p class="input_plase">
+                <input type="text" placeholder="Введіть ваш логін" name="login">
+            </p>
+            <p class="input_plase">
+                <input type="password" placeholder="Введіть ваш пароль" name="password">
+            </p>
+            <button>Увійти</button>
+        </form>
+        <p>Не маєте акаунту? </p><a href="{% url 'show_registration'%}">Створити акаунт<a>
+    </div>
+    {% endblock %}
+</body>
+</html>

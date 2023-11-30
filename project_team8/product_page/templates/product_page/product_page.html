@@ -1,3 +1,4 @@
+{% extends 'app_settings/app_settings.html' %}
 {% load static %}
 
 <html lang="en">
@@ -8,47 +9,53 @@
     <title>Product</title>
 </head>
 <body>
+    {% block content %}
     <main>
         <div>
-            <!-- <img src="" alt=""> -->
+            <img src="{% static 'product_page/images/uran235.jpg' %}" alt="tipo uran235" class = "image">
             <h1>Уран 235</h1>
             <p>Збіднений уран. Він є свого роду відходом з виробництва збагаченого урану, який знаходиться далі. Зазвичай використовується у військовій сфері. Наприклад броня у танків, вміст снарядів і так далі. Створіть свою власну армію за таку смішну ціну!</p>
         </div>
 
         <div>
-            <!-- <img src="" alt=""> -->
+            <img src="{% static 'product_page/images/uran238.jpg' %}" alt="tipo uran238" class = "image">
             <h1>Уран 238</h1>
             <p>Він також відомий як збагачений уран. Може використовуватись у ваших домашніх АЕС або у кишеньковій ядерній зброї. Залежить від вашого настрою та бажання :).</p>
         </div>
 
         <div>
-            <!-- <img src="" alt=""> -->
+            <img src="{% static 'product_page/images/californiy.jpg' %}" alt="tipo californiy" class = "image">
             <h1>Каліфорній</h1>
             <p>Він є ініціюючим джерелом нейтронів для ядерних реакторів. Візьміть його разом з ураном 238.</p>
         </div>
 
         <div>
-            <!-- <img src="" alt=""> -->
+            <img src="{% static 'product_page/images/plutoniy.jpg' %}" alt="tipo plutoniy" class = "image">
             <h1>Плутоній</h1>
             <p>Він використовується у військовій сфері також, як і уран 235. Також його можна використовувати його як паливо для ваших АЕС, але це буде не настільки економічно вигідно, як використання урану 238.</p>
         </div>
 
         <div>
-            <!-- <img src="" alt=""> -->
+            <img src="{% static 'product_page/images/grafit.jpg' %}" alt="tipo grafit" class = "image">
             <h1>Графіт з ЧАЕС</h1>
             <p>Просто графіт з ЧАЕС. Підійде для того, щоб поставити його собі на полицю, та померти від радіоактивного отруєння.</p>
         </div>
 
     </main>
+    {% endblock %}
 </body>
 </html>
 <!--{% for prod in product_list %}
+        <hr>
         <div class="product">
             <h1>{{prod.name}}</h1>
+            <img src="{{prod.image.url}}" alt="Error" "style="max-width: 400px;">
+            <h2> Випромінює {{prod.radiation}} рентген на 1грамм </h2>
             <p>{{prod.description}}</p>
             if prod.in_stock == True %}
                 <p>Є на складі</p>
             else
-            <p>Немає на складі</p>
+                <p>Немає на складі</p>
+            <h2>Ціна: {{prod.price}}</h2>
         </div>
     {% endfor %} -->
